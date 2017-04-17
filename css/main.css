@@ -12,7 +12,7 @@ Task for job position Frontend Developer - Junior
 /* FONTS */
 @font-face { font-family: 'Helvetica'; src: url("../fonts/Helvetica/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/Helvetica.woff") format("woff"), url("../fonts/Helvetica/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica/Helvetica.svg#HelveticaWorld-Regular") format("svg"); }
 /* GENERAL STYLING */
-body { font-family: 'Helvetica', 'Arial', sans-serif; fonts-size: 100%; background-color: #ffffff; }
+body { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 100%; background-color: #ffffff; }
 
 hr { width: 56px; background: #c41230; height: 2px; border: none; }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 { text-transform: uppercase; color: #222222; }
 
 /* CUSTOM STYLING */
 /* HEADER */
-header { background-color: #f2ece0; clear: both; position: relative; }
+header { background-color: #f2ece0; position: relative; }
 header img { float: left; width: 148px; margin-top: 32px; }
 header nav { float: right; margin-top: 24px; }
 header nav a { font-size: 14px; font-weight: bold; text-transform: uppercase; padding-right: 44px; -webkit-transition: 0.5s; transition: 0.5s; }
