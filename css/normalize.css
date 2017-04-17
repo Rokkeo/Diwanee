@@ -103,17 +103,3 @@ button {
 ::selection {
 	background: #e3e3e3;
 }
-
-/* SCROLLING */
-/* html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  remove scrollbar space
-    background: transparent;  optional: just make scrollbar invisible
-}
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
- */

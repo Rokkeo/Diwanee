@@ -1,4 +1,14 @@
+/*****************************************************************/
+/*
 
+Theme - Diwanee Serbia 
+Developer - Velimir Topolovacki
+Date - 16.04.2017
+
+Task for job position Frontend Developer - Junior
+
+*/
+/*****************************************************************/
 
 /* FONTS */
 @font-face {
@@ -9,26 +19,11 @@
 		 url('../fonts/Helvetica/Helvetica.svg#HelveticaWorld-Regular') format('svg');
 }
 
-/* COLORS */
-// primary colors
-
-
-// suplementary colors
-
-
 /* GENERAL STYLING */
 body {
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	fonts-size: 100%;
 	background-color: #ffffff;
-}
-
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
 }
 
 hr {
@@ -46,20 +41,25 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	color: #222222;
 }
-.clearfix {display: inline-block;}
 
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-/* End hide from IE-mac */
-/* CUSTOM STYLING */
-
+// centers the content on the page
 .container {
 	width: 960px / 1440px * 100%;
 	margin: 0 auto;
 }
 
+// clears the floats
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 
+
+
+/* CUSTOM STYLING */
 
 /* HEADER */
 header {
@@ -91,32 +91,14 @@ header {
 		
 		.hamburger {
 		    position: relative;
-			top: -48px;
+			top: -62px;
 			right: 36px;
 			visibility: hidden;
 			float: none;
-			
-			span, span:before, span:after {
-				width: 30px;
-				height: 3px;
-				background: #000333;
-				display: block;
-				position: relative;				
-			}
-			
-			span:before {
-				content: '';
-				position: absolute;
-				top:  -10px;
-			} 
-				
-			span:after {
-				content: '';
-				position: absolute;
-				top:  10px;
-			} 
-		}
-		
+			background: url(../images/menu-btn.png) no-repeat;
+			width: 30px;
+			height: 24px;
+		}	
 	}
 }
 
@@ -134,8 +116,8 @@ header {
 	}
 	
 		.social-icons {
-		float: right;
-		margin: 0;
+			float: right;
+			margin: 0;
 
 		li, a {
 			display: inline;
@@ -146,10 +128,8 @@ header {
 			}
 		}
 	}
-
 }
 	
-
 /* BANNER */
 .banner {
 	width: 100%;
@@ -346,8 +326,7 @@ header {
 	
 	.fb {
 		background: #3c5a9a;
-	}
-	
+	}	
 }
 
 /* FOOTER */
@@ -356,7 +335,6 @@ footer {
 	background-color: #1e1e1e;
 	overflow: hidden;
 	position: relative;
-
 }
 
 .offices {
@@ -374,7 +352,8 @@ footer {
 	li:last-child {
 		margin-right: 0;
 	}
-	 span {
+	
+	span {
 		text-transform: uppercase;
 		color: #f2f2f2;
 	}
@@ -417,11 +396,10 @@ footer {
 		transition: 0.5s;
 		
 		&:hover {
-				color: #c41230;
-			}
+			color: #c41230;
+		}
 	}
 }
-
 
 
 /* MEDIA-QUERIES */
@@ -431,6 +409,7 @@ footer {
 		background-size: cover;
 	}
 }
+
 @media screen and (max-width: 1024px) {
 	
 	.container {
@@ -474,12 +453,8 @@ footer {
 				float: right;
 				visibility: visible;
 			}
-
 		}
 	}
-	
-	
-
 }
 
 @media screen and (max-width: 800px) {
@@ -520,7 +495,6 @@ footer {
 	.job-post:nth-child(2n+1) {
 		background: white;
 		
-		
 		h2, p,  {
 			color: #222222;
 		}
@@ -529,7 +503,6 @@ footer {
 			color: #c41230;
 		}
 	}
-	
 	
 	.offices {
 		li {
@@ -544,15 +517,16 @@ footer {
 			text-align: center;
 			float: none;
 		}
-	}
-	
-	.footer-links {
-		position: absolute;
-		max-width: 269px;
-		bottom: 136px;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
+		
+		.footer-links {
+			position: relative;
+			max-width: 269px;
+			bottom: 107px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			float: none;
+		}
 	}
 }
 
@@ -565,6 +539,7 @@ footer {
 		hr {
 			display: none;
 		}
+		
 		h3 {
 			font-size: 20px;
 			display: block;
@@ -613,7 +588,7 @@ footer {
 	
 }
 
-
+/* this class isn't part of media queries - it simply adds visibility to main nav when menu button is pressed */
 .is-visible {
 	visibility: visible;
 }

@@ -1,10 +1,18 @@
+/*****************************************************************/
+/*
+
+Theme - Diwanee Serbia 
+Developer - Velimir Topolovacki
+Date - 16.04.2017
+
+Task for job position Frontend Developer - Junior
+
+*/
+/*****************************************************************/
 /* FONTS */
 @font-face { font-family: 'Helvetica'; src: url("../fonts/Helvetica/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/Helvetica.woff") format("woff"), url("../fonts/Helvetica/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica/Helvetica.svg#HelveticaWorld-Regular") format("svg"); }
-/* COLORS */
 /* GENERAL STYLING */
 body { font-family: 'Helvetica', 'Arial', sans-serif; fonts-size: 100%; background-color: #ffffff; }
-
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
 hr { width: 56px; background: #c41230; height: 2px; border: none; }
 
@@ -12,27 +20,18 @@ li { display: inline-block; }
 
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; color: #222222; }
 
-.clearfix { display: inline-block; }
-
-/* Hides from IE-mac \*/
-* html .clearfix { height: 1%; }
-
-.clearfix { display: block; }
-
-/* End hide from IE-mac */
-/* CUSTOM STYLING */
 .container { width: 66.66667%; margin: 0 auto; }
 
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* CUSTOM STYLING */
 /* HEADER */
 header { background-color: #f2ece0; clear: both; position: relative; }
 header img { float: left; width: 148px; margin-top: 32px; }
 header nav { float: right; margin-top: 24px; }
 header nav a { font-size: 14px; font-weight: bold; text-transform: uppercase; padding-right: 44px; -webkit-transition: 0.5s; transition: 0.5s; }
 header nav a:hover { color: #c41230; }
-header nav .hamburger { position: relative; top: -48px; right: 36px; visibility: hidden; float: none; }
-header nav .hamburger span, header nav .hamburger span:before, header nav .hamburger span:after { width: 30px; height: 3px; background: #000333; display: block; position: relative; }
-header nav .hamburger span:before { content: ''; position: absolute; top: -10px; }
-header nav .hamburger span:after { content: ''; position: absolute; top: 10px; }
+header nav .hamburger { position: relative; top: -62px; right: 36px; visibility: hidden; float: none; background: url(../images/menu-btn.png) no-repeat; width: 30px; height: 24px; }
 
 .nav-social { padding: 35px 22px; visibility: hidden; }
 .nav-social p { float: left; color: #cccccc; text-transform: uppercase; font-size: 16px; letter-spacing: 2px; padding-top: 9px; }
@@ -120,7 +119,7 @@ footer { background-color: #1e1e1e; overflow: hidden; position: relative; }
   .job-post:nth-child(2n+1) li > a { color: #c41230; }
   .offices li { float: none; width: auto; margin-bottom: 25px; }
   .footer-info .copyright { text-align: center; float: none; }
-  .footer-links { position: absolute; max-width: 269px; bottom: 136px; left: 0; right: 0; margin: 0 auto; } }
+  .footer-info .footer-links { position: relative; max-width: 269px; bottom: 107px; left: 0; right: 0; margin: 0 auto; float: none; } }
 @media screen and (max-width: 640px) { .banner p { display: none; }
   .banner hr { display: none; }
   .banner h3 { font-size: 20px; display: block; margin-top: 64px; } }
@@ -131,4 +130,5 @@ footer { background-color: #1e1e1e; overflow: hidden; position: relative; }
   .job-post .job-info p { font-size: 15px; }
   .job-listing p:first-child, .about-us p:first-child { margin-top: 28px; font-size: 14px; }
   .job-listing p:last-child, .about-us p:last-child { font-size: 18px; } }
+/* this class isn't part of media queries - it simply adds visibility to main nav when menu button is pressed */
 .is-visible { visibility: visible; }
