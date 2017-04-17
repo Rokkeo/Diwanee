@@ -1,0 +1,134 @@
+/* FONTS */
+@font-face { font-family: 'Helvetica'; src: url("../fonts/Helvetica/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/Helvetica.woff") format("woff"), url("../fonts/Helvetica/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica/Helvetica.svg#HelveticaWorld-Regular") format("svg"); }
+/* COLORS */
+/* GENERAL STYLING */
+body { font-family: 'Helvetica', 'Arial', sans-serif; fonts-size: 100%; background-color: #ffffff; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+hr { width: 56px; background: #c41230; height: 2px; border: none; }
+
+li { display: inline-block; }
+
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; color: #222222; }
+
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+
+/* End hide from IE-mac */
+/* CUSTOM STYLING */
+.container { width: 66.66667%; margin: 0 auto; }
+
+/* HEADER */
+header { background-color: #f2ece0; clear: both; position: relative; }
+header img { float: left; width: 148px; margin-top: 32px; }
+header nav { float: right; margin-top: 24px; }
+header nav a { font-size: 14px; font-weight: bold; text-transform: uppercase; padding-right: 44px; -webkit-transition: 0.5s; transition: 0.5s; }
+header nav a:hover { color: #c41230; }
+header nav .hamburger { position: relative; top: -48px; right: 36px; visibility: hidden; float: none; }
+header nav .hamburger span, header nav .hamburger span:before, header nav .hamburger span:after { width: 30px; height: 3px; background: #000333; display: block; position: relative; }
+header nav .hamburger span:before { content: ''; position: absolute; top: -10px; }
+header nav .hamburger span:after { content: ''; position: absolute; top: 10px; }
+
+.nav-social { padding: 35px 22px; visibility: hidden; }
+.nav-social p { float: left; color: #cccccc; text-transform: uppercase; font-size: 16px; letter-spacing: 2px; padding-top: 9px; }
+.nav-social .social-icons { float: right; margin: 0; }
+.nav-social .social-icons li, .nav-social .social-icons a { display: inline; }
+.nav-social .social-icons li a, .nav-social .social-icons a a { width: auto; padding-right: 27px; }
+
+/* BANNER */
+.banner { width: 100%; background-color: #f2ece0; background: url(../images/hero.jpg) repeat-x; -webkit-background-size: contain; background-size: contain; text-align: center; overflow: hidden; color: #222222; min-height: 600px; }
+.banner h1 { font-size: 60px; margin: 158px 0 39px 0; }
+.banner h3 { display: none; }
+.banner p { font-size: 24px; margin-top: 40px; margin-bottom: 240px; }
+
+/* SERVICES */
+.services { text-align: center; background-color: #fbfbfb; overflow: hidden; }
+.services ul li:nth-child(2) { background: #ededed; }
+.services li { width: 33.33333%; float: left; padding: 96px 61px 74px 61px; }
+.services li img { margin: 0 auto; }
+.services li h3 { font-size: 18px; margin: 43px 0; color: #222222; letter-spacing: 4px; }
+.services li hr { background: #d0d0d0; }
+.services li p { color: #666666; margin-top: 40px; }
+
+/* JOB-LISTINGS */
+.job-listing p:first-child, .about-us p:first-child { text-transform: uppercase; text-align: center; letter-spacing: 2px; color: #999999; margin: 136px 0 42px 0; }
+.job-listing p:last-child, .about-us p:last-child { text-align: center; margin: 60px 0 84px 0; font-size: 24px; }
+.job-listing h1, .about-us h1 { text-align: center; font-size: 50px; margin-bottom: 41px; }
+.job-listing button, .about-us button { margin: 93px auto; font-size: 14px; color: #333333; padding: 17px 22px; display: block; background: #eeeeee; text-transform: uppercase; letter-spacing: 1px; }
+
+.job-post { padding: 51px 0 40px 0; overflow: hidden; }
+.job-post .job-info { float: left; width: 73.95833%; float: left; padding-right: 86px; }
+.job-post .job-info h2 { font-size: 20px; }
+.job-post .job-info p { font-size: 18px; padding: 27px 0 36px 0; }
+.job-post .job-info a { font-size: 13px; padding: 7px 20px; border: 1px solid #bbbbbb; border-radius: 2px; margin-right: 7px; color: #c41230; float: left; }
+
+.cta-link { padding: 11px 38px; margin-top: 61px; border: 2px solid #222222; border-radius: 2px; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; display: inline-block; }
+
+.job-post:nth-child(2n+1) { background: #222222; color: white; }
+.job-post:nth-child(2n+1) h2 { color: white; }
+.job-post:nth-child(2n+1) li > a { color: white; }
+.job-post:nth-child(2n+1) a { color: white; border: 2px solid white; }
+
+/* ABOUT-US */
+.about-us { overflow: hidden; background: #fbfbfb; }
+.about-us p:last-child { font-size: 18px; text-align: left; }
+
+.about-us-social { width: 100%; background: white; text-align: center; overflow: hidden; padding: 106px 0; }
+.about-us-social p:first-child { padding: 0; margin: 0; }
+.about-us-social a { color: white; padding: 15px 22px; display: block; margin-top: 27px; }
+.about-us-social .twitter { background: #20b9ff; padding: 15px 16px; margin-right: 4px; }
+.about-us-social .fb { background: #3c5a9a; }
+
+/* FOOTER */
+footer { background-color: #1e1e1e; overflow: hidden; position: relative; }
+
+.offices { overflow: hidden; background: #222222; padding: 137px 0 106px 0; color: #666666; }
+.offices li { width: 20.9375%; float: left; margin-right: 18%; }
+.offices li:last-child { margin-right: 0; }
+.offices span { text-transform: uppercase; color: #f2f2f2; }
+.offices .locator { padding-right: 12px; padding-bottom: 28px; color: #c41230; }
+
+.footer-info { padding: 30px 0; height: 113px; }
+.footer-info .copyright { font-size: 12px; color: #4a4a4a; text-transform: uppercase; float: left; }
+.footer-info .footer-links { float: right; color: #4a4a4a; }
+.footer-info .footer-links a { padding-right: 15px; -webkit-transition: 0.5s; transition: 0.5s; }
+.footer-info .footer-links a:hover { color: #c41230; }
+.footer-info a { color: #4a4a4a; float: right; -webkit-transition: 0.5s; transition: 0.5s; }
+.footer-info a:hover { color: #c41230; }
+
+/* MEDIA-QUERIES */
+@media screen and (max-width: 1300px) { .banner { -webkit-background-size: cover; background-size: cover; } }
+@media screen and (max-width: 1024px) { .container { width: 84.66667%; }
+  header nav { visibility: hidden; float: right; background: #252525; opacity: 0.99; padding: 0; position: absolute; margin: auto; top: 104px; left: 0; right: 0; min-height: 568px; }
+  header nav ul { margin: 130px 0; }
+  header nav li, header nav a { display: block; width: 100%; padding-right: 0; color: white; text-align: center; }
+  header nav a { padding: 30px 0; font-weight: 100; color: #cccccc; font-size: 24px; }
+  header nav .hamburger { float: right; visibility: visible; } }
+@media screen and (max-width: 800px) { .services li { float: none; width: 100%; }
+  .banner { height: 500px; }
+  .job-listing p:last-child, .about-us p:last-child { font-size: 20px; }
+  .cta-link { display: none; }
+  .job-post { background: #f8f7f5; }
+  .job-post .job-info a { color: #c41230; border: none; padding: 0; }
+  .job-post:nth-child(2n+1) { background: white; }
+  .job-post:nth-child(2n+1) h2, .job-post:nth-child(2n+1) p { color: #222222; }
+  .job-post:nth-child(2n+1) li > a { color: #c41230; }
+  .offices li { float: none; width: auto; margin-bottom: 25px; }
+  .footer-info .copyright { text-align: center; float: none; }
+  .footer-links { position: absolute; max-width: 269px; bottom: 136px; left: 0; right: 0; margin: 0 auto; } }
+@media screen and (max-width: 640px) { .banner p { display: none; }
+  .banner hr { display: none; }
+  .banner h3 { font-size: 20px; display: block; margin-top: 64px; } }
+@media screen and (max-width: 500px) { .job-post .job-info { width: auto; padding-right: 0; } }
+@media screen and (max-width: 380px) { .banner { background: url(../images/hero-mob.jpg) no-repeat center; -webkit-background-size: cover; background-size: cover; }
+  .services li { padding: 47px 24px 68px 24px; }
+  .job-listing h1, .about-us h1 { font-size: 40px; }
+  .job-post .job-info p { font-size: 15px; }
+  .job-listing p:first-child, .about-us p:first-child { margin-top: 28px; font-size: 14px; }
+  .job-listing p:last-child, .about-us p:last-child { font-size: 18px; } }
+.is-visible { visibility: visible; }
